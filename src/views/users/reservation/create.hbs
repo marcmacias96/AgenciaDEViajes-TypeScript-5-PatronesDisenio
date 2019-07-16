@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+            <div class="card-body">
+                
+                <form action="/user/reservation/create/{{_id}}" method="POST">
+                   
+                    <div class="form-group">
+                         <h2>{{name}}</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="cantDays" placeholder="Cantidad Dias" class="form-control" autofocus>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="number" name="cantPerson" placeholder="Cantidad Personas" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <input type="date" name="date"  class="form-control" >
+                    </div>
+                    
+                             
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="isflights">
+                            <label class="form-check-label" for="gridCheck1">
+                            Vuelos
+                            </label>
+                    </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="islodging">
+                            <label class="form-check-label" for="gridCheck1">
+                            Hospedaje
+                            </label>
+                    </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="isfeeding">
+                            <label class="form-check-label" for="gridCheck1">
+                            Alimentación
+                            </label>
+                    </div>
+                    </div>
+                    <div class="form-group p-3">
+                        <button type="submit" class="btn btn-success btn-block">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

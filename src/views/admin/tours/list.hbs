@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="slider">
+		<ul>
+			<li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Alberta_-_Lake_Louise_-_Lake_view_01.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://mk0discoverbanfhesjg.kinstacdn.com/wp-content/uploads/2017/12/Banff-Gondola-View-in-the-Summer.jpg" alt="">
+            </li>
+		</ul>
+	</div>
+</div>
+<center>
+    <h1 style="background-color:DodgerBlue;">Tours</h1>
+    
+</center>
+
+<div class="row" class="center">
+    {{#each tours}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-footer">
+                <h2>{{name}}</h2>
+            </div>
+            <div class="card-body">
+                <h1>{{ubication}}</h1>
+                <p>{{description}}</p>
+                <h2>{{pkcPrice}}</h2>
+            </div>
+            <div class="card-footer d-flex justify-content-between alig-items-center">
+                <a href="/admin/tour/delete/{{_id}}" class="btn btn-danger">
+                    Delete
+                </a>
+              
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+    

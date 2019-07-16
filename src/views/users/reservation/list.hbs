@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="slider">
+		<ul>
+			<li>
+                <img src="https://mk0discoverbanfhesjg.kinstacdn.com/wp-content/uploads/2016/12/Walking-along-Lake-Louise.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://mk0discoverbanfhesjg.kinstacdn.com/wp-content/uploads/2016/12/Moraine-Lake.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://mk0discoverbanfhesjg.kinstacdn.com/wp-content/uploads/2016/12/Discover-Lake-Louise-Moraine-Lake-Lake-Louise.jpg" alt="">
+            </li>
+		</ul>
+	</div>
+</div>
+<center>
+    <h1 style="background-color:DodgerBlue;">Reservaciones</h1>
+    
+</center>
+
+<div class="row">
+    {{#each reservations}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-footer">
+                <h2>{{package.name}}</h2>
+            </div>
+            <div class="card-body">
+                <h1>{{person.name}}</h1>
+                <p>{{cantDays}} Dias</p>
+                <h2>{{cantPerson}} Personas</h2>
+            </div>
+            <div class="card-footer d-flex justify-content-between alig-items-center">
+                <a href="/user/reservation/delete/{{_id}}" class="btn btn-danger">
+                    Delete
+                </a>
+              
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

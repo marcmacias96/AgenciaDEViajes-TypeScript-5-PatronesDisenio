@@ -1,0 +1,26 @@
+<div class="row">
+    
+</div>
+<div class="row">
+    {{#each tours}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-footer">
+                <h2>{{name}}</h2>
+            </div>
+            <div class="card-body">
+                <h1>{{ubication}}</h1>
+                <p>{{description}}</p>
+                <h2>{{pkcPrice}}</h2>
+            </div>
+            <div class="card-footer d-flex justify-content-between alig-items-center">
+                <a href="/user/reservation/create/{{_id}}" class="btn btn-primary">
+                    Reserve
+                </a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+    

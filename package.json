@@ -1,0 +1,42 @@
+{
+  "name": "TypeScript-Crud-Mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev": "ts-node src/index.ts",
+    "hbscopy": "ncp ./src/views/ ./dist/views/",
+    "public": "ncp ./src/public/ ./dist/public/",
+    "build": "npm run clean && tsc && npm run hbscopy && npm run public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/connect-flash": "0.0.34",
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.11",
+    "morgan": "^1.9.1",
+    "ncp": "^2.0.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt-nodejs": "0.0.30",
+    "@types/express": "^4.16.1",
+    "@types/express-handlebars": "0.0.32",
+    "@types/express-session": "^1.15.12",
+    "@types/mongoose": "^5.5.3",
+    "@types/morgan": "^1.7.35",
+    "@types/passport": "^1.0.0",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.4.5"
+  }
+}
